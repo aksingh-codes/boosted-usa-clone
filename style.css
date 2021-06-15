@@ -527,6 +527,7 @@ nav#navbar{
 
     #show{
         margin-top: 63px;
+        padding-bottom: 50px;
     }
 
     #show button{
@@ -538,7 +539,7 @@ nav#navbar{
     #show .overlay-for-image{
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 20px;
     }
     #show .overlay-for-image .text-container{
         position: relative;
@@ -585,11 +586,11 @@ nav#navbar{
         position: relative;
         top: 0;left: 0;
         transform: none;
-        padding: 0 var(--default-padding);
+        padding: 20px var(--default-padding);
     }
 
     #feature-section{
-        padding: 50px var(--default-padding);
+        padding: 0 var(--default-padding) 50px;
     }
 
     #feature-section .flex-container{
@@ -623,6 +624,11 @@ nav#navbar{
        justify-items: center;
        text-align: center;
        gap: 30px;
+   }
+
+   #copyright-section .flex-container{
+       flex-direction: column;
+       gap: 16px;
    }
 
    body{
