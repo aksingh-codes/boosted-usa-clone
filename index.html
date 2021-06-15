@@ -22,6 +22,7 @@
     <nav id="navbar">
         <div class="navbar-brand">
             <img src="images/Boosted-Boards-Scooters-Logo_1600x.png" alt="">
+            <i class="fas fa-times fa-2x times-icon" onclick="closeNav()"></i>
         </div>
         <div class="navbar-menu collapse">
             <ul>
@@ -49,16 +50,34 @@
             <i class="fas fa-user-circle fa-2x"></i>
         </div>
         
-        <i class="fas fa-bars fa-2x hamburger-icon"></i>
+    </nav>
+    <nav id="mobile-tophead">
+        <div class="mobile-navbar-brand">
+            <img src="images/logonew.png" alt="">
+        </div>
+        <div class="mobile-hamburger">
+            <i class="fas fa-bars fa-2x mobile-hamburger-icon" onclick="openNav()"></i>
+        </div>
     </nav>
     <div id="show">
         <div class="overlay-for-image">
             <div class="image-container">
                 <img src="images/buy-in-stock-boosted-boards-and-rev-electric-scooter-2_1600x.jpg" alt="">
+                
             </div>
+            
+            <div class="text-container">
+                <h1>Welcome to Boosted USA</h1>
+                <p class="bold">The Holy Grail of Electric Skateboards and One REVolutionary Scooter </p>
+                <div class="flex-container">
+                    <button>BOOSTED REVS</button>
+                    <button>BOOSTED BOARDS</button>
+                </div>
+            </div>
+            
         </div>
     </div>
-    <div id="press" style="background-color: black;">
+    <div id="press"">
         <div class="press-image-container"><img src="images/purchase-boosted-elecric-scooter-TechCrunch-Black-and-White-Logo_1600x.png" alt=""></div>
         <div class="press-image-container"><img src="images/buy-boosted-rev-electric-scooter-press-electrek-logo-white_1600x.png" alt=""></div>
         <div class="press-image-container"><img src="images/purchase-boosted-electric-skateboards-press-Popular_Mechanics_logo-white_1600x.png" alt=""></div>
@@ -66,13 +85,12 @@
     </div>
     <div id="middle-heading-section">
         <div class="container">
-            <h2 class="title">
+            <h1 class="title">
                 Looking for Boosted Boards, or Boosted Revs?
-            </h2>
+            </h1>
             <p class="text">
                 Boosted USA acquired all of the remaining inventory directly from Boosted.  This means we have the electric skateboards and scooter you all love and have been looking for.  Get your hands on these highly sought after products while supplies last.
             </p>
-            <hr>
         </div>
     </div>
     <div id="feature-promotion-section">
@@ -80,14 +98,16 @@
             <div class="center-text-container">
                 <img src="images/boosted-stealth-mini-mini-x-in-stock-electric-skateboards_1600x.jpg" alt="">
                 <div class="center-text">
-                    <h2>Shop Boosted Boards</h2>
+                    <i class="fas fa-bolt fa-2x"></i>
+                    <h3>Shop Boosted Boards</h3>
                     <p>In Stock</p>
                 </div>
             </div>
             <div class="center-text-container">
                 <img src="images/boosted-rev-electric-scooter-now-in-stock_1600x.jpg" alt="">
                 <div class="center-text">
-                    <h2>Shop Boosted Revs</h2>
+                    <i class="fas fa-bolt fa-2x"></i>
+                    <h3>Shop Boosted Revs</h3>
                     <p>In Stock</p>
                 </div>
             </div>
@@ -96,12 +116,12 @@
     <div id="show-section-again">
         <div class="overlay-for-image">
             <div class="image-container">
-                <img src="" alt="">
+                <img src="images/buy-boosted-boards-electric-skateboard-in-stock-1_1600x.jpg" alt="">
             </div>
             <div class="text-container-center">
-                <p>High-performance </p>
-                <span>Electric Skateboards</span>
-                <p>Cruising campus, going to work or getting through that long list of errands has never been easier or more fun.</p>
+                <h1>High-performance </h1>
+                <h2>Electric Skateboards</h2>
+                <p class="bold">Cruising campus, going to work or getting through that long list of errands has never been easier or more fun.</p>
                 <button>Shop Now</button>
             </div>
         </div>
@@ -109,10 +129,10 @@
 
     <div id="feature-section">
         <div class="flex-container">
-            <div class="image-container"><img src="" alt=""></div>
-            <div class="image-container"><img src="" alt=""></div>
+            <div class="image-container"><img src="images/boosted-rev-scooter-purchase-online-in-stock_1600x.jpg" alt=""></div>
+            <div class="image-container"><img src="images/boosted-rev-display-and-features-in-stock-electric-scooter_1600x.jpg" alt=""></div>
             <div class="text-container flex-card-col">
-                <h2>Boosted Rev</h2>
+                <h3>Boosted Rev</h3>
                 <p>There's never been an electric scooter quite like this. Speed past traffic at 24 mph. Go up to 22 miles on a single charge. You'll get there in no time at all. Stop and go with the roll of your thumb. Its intuitive design means there’s almost no learning curve.</p>
                 <button>Shop Now</button>
             </div>
@@ -124,21 +144,21 @@
             <div class="image-container">
                 <img src="images/boosted-stealth-size_1600x.jpg" alt="">
                 <div class="text">
-                    <h2>Shop Boosted Stealth</h2>
+                    <h3>Shop Boosted Stealth</h3>
                     <span>IN STOCK</span>
                 </div>
             </div>
             <div class="image-container">
                 <img src="images/boosted-plus-size_1600x.jpg" alt="">
                 <div class="text">
-                    <h2>Shop Boosted Plus</h2>
+                    <h3>Shop Boosted Plus</h3>
                     <span>IN STOCK</span>
                 </div>
             </div>
             <div class="image-container">
                 <img src="IMAGES/mini_1600x.jpg" alt="">
                 <div class="text">
-                    <h2>Shop Boosted Mini X</h2>
+                    <h3>Shop Boosted Mini X</h3>
                     <span>IN STOCK</span>
                 </div>
             </div>
@@ -146,30 +166,30 @@
     </div>
 
     <div class="social-videos-section">
-        <iframe width="438" height="246" src="https://www.youtube.com/embed/78bXV1ZqQWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="438" height="246" src="https://www.youtube.com/embed/oAQxk9dOJ8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="500" height="280" src="https://www.youtube.com/embed/78bXV1ZqQWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="500" height="280" src="https://www.youtube.com/embed/oAQxk9dOJ8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div id="slogan-section">
         <div class="flex-container">
             <div class="transparent-card-flex">
-                <img src="" alt="">
-                <h2>Go Fast</h2>
+                <img src="images/fast-top-speed-electric-skateboards-and-scooter-boosted-new1.png" alt="">
+                <h3>Go Fast</h3>
                 <p>Boosted is known for its premium performance boards offering a next-level experience.</p>
             </div>
             <div class="transparent-card-flex">
-                <img src="" alt="">
-                <h2>Go Far</h2>
+                <img src="images/amazing-range-in-stock-electric-skateboard-and-scooter.png" alt="">
+                <h3>Go Far</h3>
                 <p>With optional extended battery life, you can get wherever you need to go reliably.</p>
             </div>
             <div class="transparent-card-flex">
-                <img src="" alt="">
-                <h2>Go Safe</h2>
+                <img src="images/boosted-boards-scooters-safety-is-priority.png" alt="">
+                <h3>Go Safe</h3>
                 <p>Safety is a #1 priority for Boosted, always wear a helmet when riding.</p>
             </div>
             <div class="transparent-card-flex">
-                <img src="" alt="">
-                <h2>Built to Last!</h2>
+                <img src="images/reliable-electric-boosted-boards-and-rev-scooter.png" alt="">
+                <h3>Built to Last!</h3>
                 <p>Boosted products are engineered to last for years and are extremely reliable.</p>
             </div>
         </div>
@@ -181,7 +201,7 @@
                 <img src="images/buy-boosted-boards-online-electric-skateboard-2_1600x.png" alt="">
             </div>
             <div class="explore-container">
-                <h3>Explore</h3>
+                <h4>Explore</h4>
                 <ul>
                     <li>Electric Skateboards</li>
                     <li>Electric Scooters</li>
@@ -196,7 +216,7 @@
                 </ul>
             </div>
             <div class="about-container-flex">
-                <h3>About Boosted USA CLONE</h3>
+                <h4>About Boosted USA CLONE</h4>
                 <p>Boosted empowers people everywhere to commute across their cities, campuses, and communities in ways that were never before possible.  Boosted is solving one of the biggest problems people face each day: transportation.
                 </p>
                 <p>DBA Boosted USA CLONE
@@ -208,14 +228,20 @@
     </div>
 
     <div id="copyright-section">
+        <hr>
         <div class="flex-container">
             <div class="company">
                 <p>Boosted USA CLONE. Built by AKS</p>
             </div>
-            <div class="finance"></div>
+            <div class="finance">
+                <i class="fab fa-cc-visa fa-2x"></i>
+                <i class="fab fa-cc-paypal fa-2x"></i>
+                <i class="fab fa-google-pay fa-2x"></i>
+                <i class="fab fa-amazon-pay fa-2x"></i>
+            </div>
         </div>
     </div>
 
-
+    <script src="index.js"></script>
 </body>
 </html>

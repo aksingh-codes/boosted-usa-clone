@@ -1,21 +1,10 @@
-let str = `Electric Skateboards
-Electric Scooters
-Accessories
-FAQs
-Warranty
-Quick Start Guide
-Contact
-Gift Card
-Accessibility Statement
-About Boosted USA
-`;
 
-let arr = str.split("\n");
+const openNav = () => {
+    let nav = document.getElementById("navbar");
+    nav.style.width = "100vw";
+};
 
-let string = "";
-
-for (let index = 0; index < arr.length; index++) {
-    const element = arr[index];
-    string = string+`<li>${element}</li>\n`;
+const closeNav = () => {
+    let nav = document.getElementById("navbar");
+    nav.style.width = "0";
 }
-console.log(string);
