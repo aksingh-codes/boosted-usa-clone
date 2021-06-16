@@ -10,6 +10,20 @@
     --default-padding: 16px;
 }
 
+ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition-speed);
+}
+
+ul a:hover{
+    color: var(--secondary-color);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -385,6 +399,149 @@ nav#navbar{
     color: var(--secondary-color);
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* electric-skateboards html */
+
+#skateboards-section{
+    padding: 50px 100px;
+    background: white;
+}
+
+#skateboards-section .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#skateboards-section .grid-container .card{
+    padding: 8px;
+    /* border-radius: 8px; */
+    box-shadow: 0px 0px 2px 0px var(--tertiary-color);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 8px;
+    align-items: center;
+}
+
+#skateboards-section .grid-container .card-image{
+    overflow: hidden;
+    border-radius: 8px;
+    text-align: center;
+}
+#skateboards-section .grid-container .card-image img{
+   width: 100%;
+   border-radius: 8px;
+}
+
+#skateboards-section .grid-container .card-body{
+    padding: 8px 0 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+#skateboards-section .heading-skateboard-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 50px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.scooter-show{
+    padding: 50px 180px;
+}
+
+.carousel-control-prev , .carousel-control-next{
+    top: 40%;
+}
+
+
+
+.carousel-indicators [data-bs-target]{
+    height: auto;
+    width: auto;
+}
+
+
+
+.scooter-show .flex-container{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.scooter-show .flex-container img{
+    width: 100%;
+}
+
+
+
+.scooter-show .flex-container .scooter-card{
+    width: 100%;
+}
+
+
+#free-shipping-div{
+    background: black;
+}
+
+#free-shipping-div .flex-container{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-bottom: 3px;
+    padding: 20px 120px;
+}
+
+#scooter-social-video{
+    padding: 50px 100px;
+    text-align: center;
+}
+
+#scooter-social-video iframe{
+    width: 100%;
+}
+
+#scooter-feature-section{
+    padding: 50px 100px;
+}
+
+#scooter-feature-section .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+#scooter-feature-section .grid-container img{
+    width: 100%;
+
+}
+
+#scooter-feature-section .grid-container .feature-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#scooter-feature-section .grid-container hr{
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
 @media  screen and (max-width:1066px) {
     
     h1{
@@ -507,7 +664,7 @@ nav#navbar{
         width: 100vw;
         opacity: 0.8;
 
-        height: 63px;
+        height: 70px;
 
         z-index: 1;
     }
@@ -526,7 +683,7 @@ nav#navbar{
     }
 
     #show{
-        margin-top: 63px;
+        margin-top: 70px;
         padding-bottom: 50px;
     }
 
@@ -634,4 +791,68 @@ nav#navbar{
    body{
        overflow-x: hidden;
    }
+
+    /* skateboard html */
+    #skateboards-section{
+        padding: 113px 50px;
+    }
+
+    #skateboards-section .grid-container{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    /* scoter html */
+
+    .scooter-show{
+        margin-top: 70px;
+        padding: 0 var(--default-padding) 50px;
+    }
+
+    .scooter-show .flex-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #free-shipping-div{
+        padding: 16px var(--default-padding);
+    }
+
+    #free-shipping-div .flex-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    #scooter-social-video{
+        padding: 50px var(--default-padding);
+    }
+
+    #scooter-feature-section{
+        padding: 50px var(--default-padding);
+    }
+
+    #scooter-feature-section .grid-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #scooter-feature-section .grid-container hr{
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width:630px) {
+    /* skateboard html */
+    #skateboards-section{
+        padding: 113px var(--default-padding);
+    }
+
+    #skateboards-section .grid-container{
+        grid-template-columns: 1fr;
+
+    }
 }
