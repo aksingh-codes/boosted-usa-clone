@@ -10,6 +10,18 @@
     --default-padding: 16px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--primary-color);
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px var(--secondary-color); 
+}
+
 ul{
     list-style: none;
 }
@@ -55,6 +67,10 @@ h4{
 p,li{
     font-size: 1rem;
     font-weight: 400;
+}
+
+img{
+    object-fit: cover;
 }
 
 p.bold{
@@ -399,6 +415,55 @@ nav#navbar{
     color: var(--secondary-color);
 }
 
+/* gift card */
+
+#gift-card-showcase button{
+    margin-top: 2px;
+}
+
+#gift-card-showcase{
+    padding: 50px 200px;
+}
+#gift-card-showcase .flex-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+#gift-card-showcase .flex-container .image-container img{
+    width: 100%;
+}
+
+#gift-card-showcase .flex-container .card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#gift-card-showcase .flex-container .card-container .price-btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+#gift-card-showcase .flex-container .card-container .price-btn{
+    width: 100px;
+    background: none;
+    box-shadow: none;
+    color: var(--primary-color);
+}
+
+#gift-card-showcase .flex-container .card-container .price-btn:hover{
+    color: var(--secondary-color);
+    box-shadow: none;
+    border: 1px solid var(--secondary-color);
+}
+
+#gift-card-showcase .flex-container .card-container .card-buttons{
+    margin-top: 16px;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* electric-skateboards html */
@@ -540,16 +605,26 @@ nav#navbar{
     display: none;
 }
 
+#skateboards-section .grid-container .card-image img{
+    width: 70%;
+}
+
+#skateboards-section .grid-container .card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 1px var(--tertiary-color);
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media  screen and (max-width:1066px) {
-    
-    h1{
-        font-size: 2.5rem;
+
+    /* h1{
+        font-size: 3.5rem;
+        font-weight: 900;
     }
     
     h2{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         font-weight: 800;
     }
     
@@ -568,15 +643,49 @@ nav#navbar{
         font-weight: 400;
     }
     
+    img{
+        object-fit: cover;
+    }
+    
     p.bold{
         font-weight: 600;
         line-height: 1.5;
+        font-size: 1.5rem;
+    } */
+    
+    h1{
+        font-size: 1.8rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    h4{
         font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    p,li{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    
+    p.bold{
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 0.8rem;
     }
 
-    span{
+    /* span{
         font-weight: bolder;
-    }
+    } */
     
     nav#navbar{
         display: flex;
@@ -754,6 +863,10 @@ nav#navbar{
         flex-direction: column;
     }
 
+    #feature-section .flex-container .text-container{
+        gap: 16px;
+    }
+
     #section-product .grid-container{
         grid-template-columns: 1fr;
     }
@@ -790,6 +903,7 @@ nav#navbar{
 
    body{
        overflow-x: hidden;
+       text-align: center;
    }
 
     /* skateboard html */
@@ -815,7 +929,7 @@ nav#navbar{
     }
 
     #free-shipping-div{
-        padding: 16px var(--default-padding);
+        padding: 20px var(--default-padding);
     }
 
     #free-shipping-div .flex-container{
@@ -823,11 +937,15 @@ nav#navbar{
         align-items: center;
         gap: 16px;
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
     #scooter-social-video{
         padding: 50px var(--default-padding);
     }
+
+    
 
     #scooter-feature-section{
         padding: 50px var(--default-padding);
@@ -841,6 +959,20 @@ nav#navbar{
     #scooter-feature-section .grid-container hr{
         display: block;
     }
+
+    /* Gift Card */
+
+    #gift-card-showcase{
+        padding: 120px var(--default-padding);
+    }
+    #gift-card-showcase .flex-container{
+        flex-direction: column;
+    }
+    #gift-card-showcase .price-btns{
+        justify-content: center;
+    }
+    
+    
 }
 
 

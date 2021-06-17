@@ -17,6 +17,16 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../style.css">
 
+    <style>
+        #you-may-also-like-show{
+            text-align: center;
+        }
+        #navbar , #mobile-tophead{
+            border-bottom: 1px solid gray;
+            box-shadow: 0px 0px 3px 0px gray;
+        }
+    </style>
+
 </head>
 <body>
     <nav id="navbar">
@@ -53,13 +63,117 @@
     </nav>
     <nav id="mobile-tophead">
         <div class="mobile-navbar-brand">
-            <img src="../images/logonew.png" alt="">
+            <a href="../index.html"><img src="../images/logonew.png" alt=""></a>
         </div>
         <div class="mobile-hamburger">
             <i class="fas fa-bars fa-2x mobile-hamburger-icon" onclick="openNav()"></i>
         </div>
     </nav>
     
+
+
+    <div id="gift-card-showcase">
+        <div class="flex-container">
+            <div class="image-container">
+                <img src="../images/gift-card/giftcard_2000x.png" alt="">
+            </div>
+            <div class="card-container">
+                <h2 class="card-title">
+                    Boosted USA Clone GIFT Card
+                </h2>
+                <h4 class="price">$20.00</h4>
+                <p>Give the gift of Boosted!</p>
+                <p>Denominations</p>
+                <div class="price-btns">
+                    <button class="price-btn">$20.00</button>
+                    <button class="price-btn">$50.00</button>
+                    <button class="price-btn">$100.00</button>
+                    <button class="price-btn">$500.00</button>
+                    <button class="price-btn">$1000.00</button>
+                </div>
+                <div class="card-buttons">
+                    <button>Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="free-shipping-div">
+        <div class="flex-container">
+            <div class="image-container">
+                <i class="fas fa-truck fa-4x"></i>
+            </div>
+            <h1>FAST, FREE SHIPPING <span style="color: var(--secondary-color);">ON ORDERS OVER $99</span></h1>
+        </div>
+    </div>
+
+    <div id="you-may-also-like-show">
+            <div id="skateboards-section">
+
+                <div class="heading-skateboard-section">
+                    <h2>You may also like</h2>
+                </div>
+        
+                <div class="grid-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../images/gift-card/06_1600x.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Boosted Stealth
+                            </h3>
+                            <p class="card-text">
+                                from $1,279.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../images/gift-card/18_1600x.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Boosted Risers
+                            </h3>
+                            <p class="card-text">
+                                from $12.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../images/gift-card/magura_1600x.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Magura MT-5 Disc Brake Upgrade Kit for Boosted Rev
+
+                            </h3>
+                            <p class="card-text">
+                                from $260.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../images/gift-card/boosted-stealth-bottom_1600x.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Boosted Stealth
+                            </h3>
+                            <p class="card-text">
+                                from $1,279.00
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
 
     <div id="slogan-section">
         <div class="flex-container">
@@ -130,5 +244,16 @@
     </div>
 
     <script src="../index.js"></script>
+
+    <script>
+        
+let arrPriceBtns = document.querySelectorAll("#gift-card-showcase .price-btn");
+for (const iterator of arrPriceBtns) {
+    iterator.addEventListener('click' , (e)=>{
+        let priceDOM = document.querySelector("#gift-card-showcase .price");
+        priceDOM.innerHTML = e.target.innerHTML;
+    });
+}
+    </script>
 </body>
 </html>
